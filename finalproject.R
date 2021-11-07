@@ -37,7 +37,7 @@
     
   # 3. extract only the measurement on the mean and standard deviation for each measurement
     
-   # merge_x<-select(merge_x, contains("mean"), contains("std"))
+ 
     
     merge_x=merge_x[,extracted]
    
