@@ -61,8 +61,6 @@
     
   ## 5. Appropriately labels the data set with descriptive variable names. 
   
-   
-
       
     # have a look at the names
       names(comb)
