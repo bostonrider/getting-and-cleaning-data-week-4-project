@@ -1,14 +1,18 @@
 # week 4 project
 #change directory
-#1.read and download data
+#1.download, unzip and read data
     setwd("C:/R project/getting and clean data/final project")
     library(dplyr)
     storefile <-"projectfile.zip"
     urlzip <-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-    download.file(urlzip, storefile, method="curl")
+    download.file(urlzip, storefile)
     unzip(storefile)
+
     features<-read.table("UCI HAR Dataset/features.txt") 
     colnames(features)<-c("num", "functions")
+    ## use extracted for extract only mean and std
+    extracted <- grepl("mean|std", features)
+    
   
     subject_train <-read.table("UCI HAR Dataset/train/subject_train.txt")
     colnames(subject_train)<-"subject_id"
@@ -29,7 +33,7 @@
     
   # 3. extract only the measurement on the mean and standard deviation for each measurement
     
-    merge_x<-select(merge_x, contains("mean"), contains("std"))
+     merge_x=merge_x[,extracted]
     
    #merge training label and test label
     
@@ -60,7 +64,7 @@
     #.std is placed by _std
     #angle is placed by Angle
    
-     #rename the column of "code" to test_activities: activities being tested
+    
       
     # have a look at the names
       names(comb)
