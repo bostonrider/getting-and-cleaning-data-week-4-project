@@ -1,0 +1,32 @@
+---
+title: "ReadMe"
+author: "Ting"
+date: "06/11/2021"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+This is a Peer-graded Assignment (final project): for the course called Getting and Cleaning Data
+
+Data set can be get from: 
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Files
+
+   CookBook.md describes variables,  how to get read, merged and clean data.
+   
+   finalproject.R prepares data according the following steps:
+   
+   Merges the training and the test sets to create one data set.
+
+  Extracts only the measurements on the mean and standard deviation for each measurement. 
+
+  Uses descriptive activity names to name the activities in the data set
+
+  Appropriately labels the data set with descriptive variable names. 
+
+  From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
