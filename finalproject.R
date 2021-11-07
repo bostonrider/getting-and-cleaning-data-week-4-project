@@ -19,11 +19,17 @@
   
     subject_test<-read.table("UCI HAR Dataset/test/subject_test.txt")
     colnames(subject_test)<-"subject_id"
-    trainingset <-read.table("UCI HAR Dataset/train/X_train.txt", col.names =features$functions )
-    traininglabel <-read.table("UCI HAR Dataset/train/y_train.txt", col.names="code")
+
+     trainingset <-read.table("UCI HAR Dataset/train/X_train.txt")
+    colnames(trainingset)<-features$functions 
+    traininglabel <-read.table("UCI HAR Dataset/train/y_train.txt")
+    colnames(traininglabel) <-"code"
   
-    testset<-read.table("UCI HAR Dataset/test/X_test.txt",col.names =features$functions )
-    testlabel <-read.table("UCI HAR Dataset/test/y_test.txt", col.names="code")
+    testset<-read.table("UCI HAR Dataset/test/X_test.txt")
+    colnames(testset)<-features$functions
+    testlabel <-read.table("UCI HAR Dataset/test/y_test.txt") 
+    colnames(testlabel)<-"code"
+  
   
     activities <-read.table("UCI HAR Dataset/activity_labels.txt", col.names=c("act_code", "activity"))
   
@@ -54,17 +60,9 @@
     
     
   ## 5. Appropriately labels the data set with descriptive variable names. 
-    #prefix t is replaced by time
-    # Acc is replaced by Accelerometer
-    #Gyro is replaced by Gyroscope
-   # prefix f is replaced by Frequency
-   # Mag is replaced by Magnitude
-    #BodyBody is replaced by Body
-    #.mean is placed by _mean
-    #.std is placed by _std
-    #angle is placed by Angle
+  
    
-    
+
       
     # have a look at the names
       names(comb)
