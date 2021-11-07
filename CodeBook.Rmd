@@ -44,9 +44,7 @@ About the script:
     (4) prefix f is replaced by Frequency
     (5) Mag is replaced by Magnitude
     (6) BodyBody is replaced by Body
-    (7) .mean is placed by _mean
-    (8) .std is placed by _std
-    (8) angle is placed by Angle
+    (7) angle is placed by Angle
     
 6.From the data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
  Export final tidy data set and called it "tidy_data.txt"
@@ -55,107 +53,105 @@ About the script:
 
 a. Postion 1	Suject_id 	Unique identifier for 30 volunteers  
 b. Position 2	Test_activity 	The activities include :
-  WALKING
-  WALKING_UPSTAIRS
-  WALKING_DOWNSTAIRS
-  SITTING
-  STANDING
-  LAYING
+  1. WALKING
+  2. WALKING_UPSTAIRS
+  3. WALKING_DOWNSTAIRS
+  4. SITTING
+  5. STANDING
+  6. LAYING
 
-C. Postion 3-69	
-1.	tBodyAcc-mean()-X
-2.	tBodyAcc-mean()-Y
-3.	tBodyAcc-mean()-Z
-4.	tBodyAcc-std()-X
-5.	tBodyAcc-std()-Y
-6.	tBodyAcc-std()-Z
-7.	tGravityAcc-mean()-X
-8.	tGravityAcc-mean()-Y
-9.	tGravityAcc-mean()-Z
-10.	tGravityAcc-std()-X
-11.	tGravityAcc-std()-Y
-12.	tGravityAcc-std()-Z
-13.	tBodyAccJerk-mean()-X
-14.	tBodyAccJerk-mean()-Y
-15.	tBodyAccJerk-mean()-Z
-16.	tBodyAccJerk-std()-X
-17.	tBodyAccJerk-std()-Y
-18.	tBodyAccJerk-std()-Z
-19.	tBodyGyro-mean()-X
-20.	tBodyGyro-mean()-Y
-21.	tBodyGyro-mean()-Z
-22.	tBodyGyro-std()-X
-23.	tBodyGyro-std()-Y
-24.	tBodyGyro-std()-Z
-25.	tBodyGyroJerk-mean()-X
-26.	tBodyGyroJerk-mean()-Y
-27.	tBodyGyroJerk-mean()-Z
-28.	tBodyGyroJerk-std()-X
-29.	tBodyGyroJerk-std()-Y
-30.	tBodyGyroJerk-std()-Z
-31.	tBodyAccMag-mean()
-32.	tBodyAccMag-std()
-33.	tGravityAccMag-mean()
-34.	tGravityAccMag-std()
-35.	tBodyAccJerkMag-mean()
-36.	tBodyAccJerkMag-std()
-37.	tBodyGyroMag-mean()
-38.	tBodyGyroMag-std()
-39.	tBodyGyroJerkMag-mean()
-40.	tBodyGyroJerkMag-std()
-41.	tBodyGyroJerkMag-mean()
-42.	tBodyGyroJerkMag-std()
-43.	fBodyAcc-meanFreq()-X
-44.	fBodyAcc-meanFreq()-Y
-45.	fBodyAcc-meanFreq()-Z
-46.	fBodyAccJerk-mean()-Y fBodyAccJerk-mean()-Z
-47.	fBodyAccJerk-std()-X
-48.	fBodyAccJerk-std()-Y
-49.	fBodyAccJerk-std()-Z
-50.	fBodyAccJerk-meanFreq()-X
-51.	fBodyAccJerk-meanFreq()-Y
-52.	fBodyAccJerk-meanFreq()-Z
-53.	fBodyGyro-mean()-X
-54.	fBodyGyro-mean()-Y
-55.	fBodyGyro-mean()-Z
-56.	fBodyGyro-std()-X
-57.	fBodyGyro-std()-Y
-58.	fBodyGyro-std()-Z
-59.	fBodyGyro-meanFreq()-X
-60.	fBodyGyro-meanFreq()-Y
-61.	fBodyGyro-meanFreq()-Z
-62.	fBodyAccMag-mean()
-63.	fBodyAccMag-std()
-64.	fBodyBodyAccJerkMag-mean()
-65.	fBodyBodyAccJerkMag-std()
-66.	fBodyBodyGyroMag-mean()
-67.	fBodyBodyGyroMag-std()
-68.	fBodyBodyGyroJerkMag-mean()
-69.	fBodyBodyGyroJerkMag-std()
-70.	fBodyBodyGyroJerkMag-meanFreq()
-71.	angle(X,gravityMean)
-72.	angle(Y,gravityMean)
-73.	angle(Z,gravityMean)
+C. Postion 3-81	
+
+                                     
+ [3] "TimeBodyAccelerometer-mean()-X"                    
+ [4] "TimeBodyAccelerometer-mean()-Y"                    
+ [5] "TimeBodyAccelerometer-mean()-Z"                    
+ [6] "TimeBodyAccelerometer-std()-X"                     
+ [7] "TimeBodyAccelerometer-std()-Y"                     
+ [8] "TimeBodyAccelerometer-std()-Z"                     
+ [9] "TimeGravityAccelerometer-mean()-X"                 
+[10] "TimeGravityAccelerometer-mean()-Y"                 
+[11] "TimeGravityAccelerometer-mean()-Z"                 
+[12] "TimeGravityAccelerometer-std()-X"                  
+[13] "TimeGravityAccelerometer-std()-Y"                  
+[14] "TimeGravityAccelerometer-std()-Z"                  
+[15] "TimeBodyAccelerometerJerk-mean()-X"                
+[16] "TimeBodyAccelerometerJerk-mean()-Y"                
+[17] "TimeBodyAccelerometerJerk-mean()-Z"                
+[18] "TimeBodyAccelerometerJerk-std()-X"                 
+[19] "TimeBodyAccelerometerJerk-std()-Y"                 
+[20] "TimeBodyAccelerometerJerk-std()-Z"                 
+[21] "TimeBodyGyroscope-mean()-X"                        
+[22] "TimeBodyGyroscope-mean()-Y"                        
+[23] "TimeBodyGyroscope-mean()-Z"                        
+[24] "TimeBodyGyroscope-std()-X"                         
+[25] "TimeBodyGyroscope-std()-Y"                         
+[26] "TimeBodyGyroscope-std()-Z"                         
+[27] "TimeBodyGyroscopeJerk-mean()-X"                    
+[28] "TimeBodyGyroscopeJerk-mean()-Y"                    
+[29] "TimeBodyGyroscopeJerk-mean()-Z"                    
+[30] "TimeBodyGyroscopeJerk-std()-X"                     
+[31] "TimeBodyGyroscopeJerk-std()-Y"                     
+[32] "TimeBodyGyroscopeJerk-std()-Z"                     
+[33] "TimeBodyAccelerometerMagnitude-mean()"             
+[34] "TimeBodyAccelerometerMagnitude-std()"              
+[35] "TimeGravityAccelerometerMagnitude-mean()"          
+[36] "TimeGravityAccelerometerMagnitude-std()"           
+[37] "TimeBodyAccelerometerJerkMagnitude-mean()"         
+[38] "TimeBodyAccelerometerJerkMagnitude-std()"          
+[39] "TimeBodyGyroscopeMagnitude-mean()"                 
+[40] "TimeBodyGyroscopeMagnitude-std()"                  
+[41] "TimeBodyGyroscopeJerkMagnitude-mean()"             
+[42] "TimeBodyGyroscopeJerkMagnitude-std()"              
+[43] "FrequencyBodyAccelerometer-mean()-X"               
+[44] "FrequencyBodyAccelerometer-mean()-Y"               
+[45] "FrequencyBodyAccelerometer-mean()-Z"               
+[46] "FrequencyBodyAccelerometer-std()-X"                
+[47] "FrequencyBodyAccelerometer-std()-Y"                
+[48] "FrequencyBodyAccelerometer-std()-Z"                
+[49] "FrequencyBodyAccelerometer-meanFreq()-X"           
+[50] "FrequencyBodyAccelerometer-meanFreq()-Y"           
+[51] "FrequencyBodyAccelerometer-meanFreq()-Z"           
+[52] "FrequencyBodyAccelerometerJerk-mean()-X"           
+[53] "FrequencyBodyAccelerometerJerk-mean()-Y"           
+[54] "FrequencyBodyAccelerometerJerk-mean()-Z"           
+[55] "FrequencyBodyAccelerometerJerk-std()-X"            
+[56] "FrequencyBodyAccelerometerJerk-std()-Y"            
+[57] "FrequencyBodyAccelerometerJerk-std()-Z"            
+[58] "FrequencyBodyAccelerometerJerk-meanFreq()-X"       
+[59] "FrequencyBodyAccelerometerJerk-meanFreq()-Y"       
+[60] "FrequencyBodyAccelerometerJerk-meanFreq()-Z"       
+[61] "FrequencyBodyGyroscope-mean()-X"                   
+[62] "FrequencyBodyGyroscope-mean()-Y"                   
+[63] "FrequencyBodyGyroscope-mean()-Z"                   
+[64] "FrequencyBodyGyroscope-std()-X"                    
+[65] "FrequencyBodyGyroscope-std()-Y"                    
+[66] "FrequencyBodyGyroscope-std()-Z"                    
+[67] "FrequencyBodyGyroscope-meanFreq()-X"               
+[68] "FrequencyBodyGyroscope-meanFreq()-Y"               
+[69] "FrequencyBodyGyroscope-meanFreq()-Z"               
+[70] "FrequencyBodyAccelerometerMagnitude-mean()"        
+[71] "FrequencyBodyAccelerometerMagnitude-std()"         
+[72] "FrequencyBodyAccelerometerMagnitude-meanFreq()"    
+[73] "FrequencyBodyAccelerometerJerkMagnitude-mean()"    
+[74] "FrequencyBodyAccelerometerJerkMagnitude-std()"     
+[75] "FrequencyBodyAccelerometerJerkMagnitude-meanFreq()"
+[76] "FrequencyBodyGyroscopeMagnitude-mean()"            
+[77] "FrequencyBodyGyroscopeMagnitude-std()"             
+[78] "FrequencyBodyGyroscopeMagnitude-meanFreq()"        
+[79] "FrequencyBodyGyroscopeJerkMagnitude-mean()"        
+[80] "FrequencyBodyGyroscopeJerkMagnitude-std()"         
+[81] "FrequencyBodyGyroscopeJerkMagnitude-meanFreq()"    
 
 These variables include measurements on the mean and standard deviation for each measurement. 
 
 Body: signal based on the body of a participant
 
-Freq means frequency
-
-Gyro means gyroscope 
-
-Acc means accelerometer
-
-Jerk measures sudden movement
-
-Mag means magnitude
-
 Mean indicates the measurement is a mean
 
 Std indicates standard deviation
 
-T means time
+
 
 X means measurement is taken along the x dimension
 
