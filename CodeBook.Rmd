@@ -34,7 +34,7 @@ About the script:
   (7) read Y_test.txt: Test labels
   (8) read activity_labels.txt: Links the class labels with their activity name.
 
-2. Merge tarining set and testing set to create one data set.
+2. combine subject id, activity code,  training set and testing set to create one data set.
 3. Extract only the measurement on the mean and standard deviation for each measurement
 4. Uses descriptive activity names to name the activities in the data set
 5.Appropriately labels the data set with descriptive variable names: 
@@ -49,6 +49,120 @@ About the script:
     (8) angle is placed by Angle
     
 6.From the data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
- Export final tidy data set and called "tidy_data.txt"
+ Export final tidy data set and called it "tidy_data.txt"
+
+7.Variables:
+
+a. Postion 1	Suject_id 	Unique identifier for 30 volunteers  
+b. Position 2	Test_activity 	The activities include :
+  WALKING
+  WALKING_UPSTAIRS
+  WALKING_DOWNSTAIRS
+  SITTING
+  STANDING
+  LAYING
+
+C. Postion 3-69	
+1.	tBodyAcc-mean()-X
+2.	tBodyAcc-mean()-Y
+3.	tBodyAcc-mean()-Z
+4.	tBodyAcc-std()-X
+5.	tBodyAcc-std()-Y
+6.	tBodyAcc-std()-Z
+7.	tGravityAcc-mean()-X
+8.	tGravityAcc-mean()-Y
+9.	tGravityAcc-mean()-Z
+10.	tGravityAcc-std()-X
+11.	tGravityAcc-std()-Y
+12.	tGravityAcc-std()-Z
+13.	tBodyAccJerk-mean()-X
+14.	tBodyAccJerk-mean()-Y
+15.	tBodyAccJerk-mean()-Z
+16.	tBodyAccJerk-std()-X
+17.	tBodyAccJerk-std()-Y
+18.	tBodyAccJerk-std()-Z
+19.	tBodyGyro-mean()-X
+20.	tBodyGyro-mean()-Y
+21.	tBodyGyro-mean()-Z
+22.	tBodyGyro-std()-X
+23.	tBodyGyro-std()-Y
+24.	tBodyGyro-std()-Z
+25.	tBodyGyroJerk-mean()-X
+26.	tBodyGyroJerk-mean()-Y
+27.	tBodyGyroJerk-mean()-Z
+28.	tBodyGyroJerk-std()-X
+29.	tBodyGyroJerk-std()-Y
+30.	tBodyGyroJerk-std()-Z
+31.	tBodyAccMag-mean()
+32.	tBodyAccMag-std()
+33.	tGravityAccMag-mean()
+34.	tGravityAccMag-std()
+35.	tBodyAccJerkMag-mean()
+36.	tBodyAccJerkMag-std()
+37.	tBodyGyroMag-mean()
+38.	tBodyGyroMag-std()
+39.	tBodyGyroJerkMag-mean()
+40.	tBodyGyroJerkMag-std()
+41.	tBodyGyroJerkMag-mean()
+42.	tBodyGyroJerkMag-std()
+43.	fBodyAcc-meanFreq()-X
+44.	fBodyAcc-meanFreq()-Y
+45.	fBodyAcc-meanFreq()-Z
+46.	fBodyAccJerk-mean()-Y fBodyAccJerk-mean()-Z
+47.	fBodyAccJerk-std()-X
+48.	fBodyAccJerk-std()-Y
+49.	fBodyAccJerk-std()-Z
+50.	fBodyAccJerk-meanFreq()-X
+51.	fBodyAccJerk-meanFreq()-Y
+52.	fBodyAccJerk-meanFreq()-Z
+53.	fBodyGyro-mean()-X
+54.	fBodyGyro-mean()-Y
+55.	fBodyGyro-mean()-Z
+56.	fBodyGyro-std()-X
+57.	fBodyGyro-std()-Y
+58.	fBodyGyro-std()-Z
+59.	fBodyGyro-meanFreq()-X
+60.	fBodyGyro-meanFreq()-Y
+61.	fBodyGyro-meanFreq()-Z
+62.	fBodyAccMag-mean()
+63.	fBodyAccMag-std()
+64.	fBodyBodyAccJerkMag-mean()
+65.	fBodyBodyAccJerkMag-std()
+66.	fBodyBodyGyroMag-mean()
+67.	fBodyBodyGyroMag-std()
+68.	fBodyBodyGyroJerkMag-mean()
+69.	fBodyBodyGyroJerkMag-std()
+70.	fBodyBodyGyroJerkMag-meanFreq()
+71.	angle(X,gravityMean)
+72.	angle(Y,gravityMean)
+73.	angle(Z,gravityMean)
+
+These variables include measurements on the mean and standard deviation for each measurement. 
+
+Body: signal based on the body of a participant
+
+Freq means frequency
+
+Gyro means gyroscope 
+
+Acc means accelerometer
+
+Jerk measures sudden movement
+
+Mag means magnitude
+
+Mean indicates the measurement is a mean
+
+Std indicates standard deviation
+
+T means time
+
+X means measurement is taken along the x dimension
+
+y means measurement is taken along the y dimension
+
+Z means measurement is taken along the Z dimension
+
+
 
 
