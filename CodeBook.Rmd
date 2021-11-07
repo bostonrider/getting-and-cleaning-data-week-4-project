@@ -1,0 +1,54 @@
+---
+title: "Codebook"
+author: "A student"
+date: "06/11/2021"
+output: word_document
+---
+
+
+
+#This is a code book for week 4 project
+R scrip includes following steps:
+
+1. Download the data
+2. unzip the data
+
+About the data set:
+
+The source data are from the Human Activity Recognition Using Smartphones Data Set. 
+
+About the script:
+
+1. Read the files and merging the training data set and testing data set to create on data set
+  (1) reading features.txt: List of all features 
+ 
+  (2) read subject_train.txt: volunteer training subjects being observed
+  
+  (3) read subject_test.txt: volunteer testing subjects being observed
+  
+  (4) read X_train.txt: Training set.
+  
+  (5) read Y_train.txt: Training labels
+  
+  (6) read X_test.txt:  Test set.
+  (7) read Y_test.txt: Test labels
+  (8) read activity_labels.txt: Links the class labels with their activity name.
+
+2. Merge tarining set and testing set to create on data set.
+3. Extract only the measurement on the mean and standard deviation for each measurement
+4. Uses descriptive activity names to name the activities in the data set
+5.Appropriately labels the data set with descriptive variable names: 
+    (1) prefix t is replaced by time
+    (2) Acc is replaced by Accelerometer
+    (3) Gyro is replaced by Gyroscope
+    (4) prefix f is replaced by Frequency
+    (5) Mag is replaced by Magnitude
+    (6) BodyBody is replaced by Body
+    (7) .mean is placed by _mean
+    (8) .std is placed by _std
+    (8) angle is placed by Angle
+    
+6.From the data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+ final tidy data set called "tidy_data.txt"
+
+
