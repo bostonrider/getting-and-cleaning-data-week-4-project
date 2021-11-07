@@ -22,9 +22,9 @@ About the script:
 1. Read the files and merging the training data set and testing data set to create on data set
   (1) reading features.txt: List of all features 
  
-  (2) read subject_train.txt: volunteer training subjects being observed
+  (2) read subject_train.txt: ID for training subjects being observed
   
-  (3) read subject_test.txt: volunteer testing subjects being observed
+  (3) read subject_test.txt: ID for  testing subjects being observed
   
   (4) read X_train.txt: Training set.
   
@@ -34,11 +34,11 @@ About the script:
   (7) read Y_test.txt: Test labels
   (8) read activity_labels.txt: Links the class labels with their activity name.
 
-2. Merge tarining set and testing set to create on data set.
+2. Merge tarining set and testing set to create one data set.
 3. Extract only the measurement on the mean and standard deviation for each measurement
 4. Uses descriptive activity names to name the activities in the data set
 5.Appropriately labels the data set with descriptive variable names: 
-    (1) prefix t is replaced by time
+    (1) prefix t is replaced by Time
     (2) Acc is replaced by Accelerometer
     (3) Gyro is replaced by Gyroscope
     (4) prefix f is replaced by Frequency
@@ -49,6 +49,6 @@ About the script:
     (8) angle is placed by Angle
     
 6.From the data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
- final tidy data set called "tidy_data.txt"
+ Export final tidy data set and called "tidy_data.txt"
 
 
